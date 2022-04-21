@@ -1,0 +1,23 @@
+{
+  "name": "bakers",
+  "version": "1.0.0",
+  "description": "Landing page for nonso Williams, a private cake chef. Built with HTML and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"node-sass -w sass/base.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolyparty/Bakers.git"
+  },
+  "author": "ololade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lolyparty/Bakers/issues"
+  },
+  "homepage": "https://github.com/lolyparty/Bakers#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
