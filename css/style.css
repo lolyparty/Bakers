@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+body {
+  overflow-x: none;
+  max-width: 1500px;
+  margin: 0 auto; }
+
 .loadanimation {
+  position: absolute;
+  z-index: 99999999999999999999;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -89,9 +100,10 @@
 @keyframes logofill {
   0% {
     fill: transparent; }
-  1% {
+  .1% {
     fill: white; }
   100% {
+    fill: white;
     opacity: 0; } }
 
 @keyframes animationend {
@@ -100,3 +112,107 @@
   to {
     width: 0%;
     padding: 0px; } }
+
+.hero_container {
+  background: linear-gradient(111.34deg, #F0F0F0 0%, #EBECED 57.2%, rgba(239, 239, 239, 0) 100%);
+  z-index: 9; }
+  .hero_container header {
+    padding: 15px 12px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+    align-items: center; }
+    .hero_container header .logo {
+      margin: 5px 15px; }
+      .hero_container header .logo_img {
+        width: 80px;
+        height: 50px;
+        z-index: 1; }
+    .hero_container header nav {
+      padding: 5px;
+      width: 55%; }
+      .hero_container header nav ul {
+        font-family: "Nunito Sans", sans-serif;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly; }
+        .hero_container header nav ul a {
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 1rem;
+          color: #4b420b; }
+
+#hero {
+  display: flex;
+  gap: 5px;
+  position: relative; }
+  #hero .left_herosection {
+    position: relative;
+    width: 45%; }
+    #hero .left_herosection img {
+      margin-top: -130px;
+      position: relative;
+      z-index: 0;
+      width: 100%; }
+  #hero .right_herosection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 55%; }
+    #hero .right_herosection h1 {
+      font-family: "Clicker Script";
+      color: #664e00;
+      font-size: 6rem;
+      font-weight: 400;
+      margin-top: 100px; }
+    #hero .right_herosection .name_underline {
+      align-items: center; }
+      #hero .right_herosection .name_underline .underline_item {
+        width: 50px;
+        display: inline-block;
+        border: 2px solid #e6b001;
+        background-color: #e6b001;
+        align-self: center;
+        margin-bottom: 2px; }
+      #hero .right_herosection .name_underline .underline_img {
+        width: 50px;
+        height: 8px; }
+    #hero .right_herosection h3 {
+      margin: 15px 0px;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      color: #191400; }
+    #hero .right_herosection .social img {
+      height: 50px;
+      width: 50px;
+      margin: 5px; }
+
+.whitespace {
+  position: relative;
+  width: 100%;
+  height: 150px; }
+  .whitespace__bigcircle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 197, 1, 0.2);
+    width: 450px;
+    height: 450px;
+    top: 28%;
+    left: 47%;
+    transform: translate(-50%, -50%); }
+  .whitespace__smallcircle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(173, 185, 1, 0.1);
+    width: 400px;
+    height: 400px;
+    top: 28%;
+    left: 47%;
+    transform: translate(-50%, -50%); }
+
+.about {
+  display: flex; }

@@ -1,0 +1,45 @@
+.hero_container{
+    background:$color_heroBackground; 
+    z-index: 9;
+    header{
+        padding:15px 12px;
+        display:flex;
+        justify-content: space-between;
+        position:relative;
+        z-index: 9; 
+        align-items: center;
+
+        .logo{
+            margin:5px 15px;
+
+                &_img{
+                    width:80px; 
+                    height:50px;
+                    z-index: 1;     
+                } 
+        }
+
+        nav{
+            padding:5px;
+            width:55%;
+
+            ul{
+                font-family:$font_nuito;
+                list-style: none;
+                display:flex;
+                justify-content: space-evenly;
+
+                a{
+                    text-decoration: none;
+                    font-weight:300;
+                    font-size:1rem;
+                    color:$color_greenNav;
+                }
+
+            }
+    
+        }
+
+    }
+
+}

@@ -1,0 +1,70 @@
+#hero{
+    display: flex;
+    gap:5px;  
+    position:relative;
+
+    .left_herosection{
+        position:relative;
+        width:45%;
+    
+        img{
+            margin-top:-130px;    
+            position: relative;  
+            z-index: 0;  
+            width:100%;
+        
+        }
+    }
+
+    .right_herosection{  
+        display:flex;
+        justify-content: center;   
+        text-align: center; 
+        align-items: center; 
+        padding:10px;
+        width:55%;     
+        
+        h1{
+            font-family:$font_clicker;
+            color:$color_greenDark;
+            font-size:6rem;    
+            font-weight:400; 
+            margin-top:100px;       
+        }
+
+        .name_underline{
+            align-items: center;
+
+            .underline_item{   
+                width: 50px;     
+                display: inline-block;
+                border:2px solid $color_yellow;
+                background-color: $color_yellow;
+                align-self: center; 
+                margin-bottom:2px;    
+            }
+
+            .underline_img{
+                width:50px;  
+                height:8px;   
+            } 
+
+        }
+
+        h3{
+            margin:15px 0px; 
+            font-family: $font_nuito;
+            font-weight:400;
+            font-size:2rem; 
+            color:$color_blackDark ;
+        }
+
+        .social{
+            img{
+                height:50px;
+                width:50px; 
+                margin:5px;  
+            }
+        }
+    }
+}
