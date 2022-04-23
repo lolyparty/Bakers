@@ -11,9 +11,9 @@
   align-items: center;
   background: #e6b001;
   animation: animationend 1s ease 4.5s forwards;
-  transition: width 1s ease; }
+  padding: 15px; }
   .loadanimation #animationlogo {
-    animation: logofill 1.5s ease-out forwards 3.5s; }
+    animation: logofill 1.5s ease-out forwards 3s; }
     .loadanimation #animationlogo path:nth-child(1) {
       stroke-dasharray: 104;
       stroke-dashoffset: 104;
