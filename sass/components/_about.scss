@@ -1,3 +1,34 @@
 .about{
     display:flex;
-}
+    background: $color_aboutSection; 
+
+    .about_meimage{
+        width:45%;
+    }
+
+    .about_me{
+        padding:40px 20px; 
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        width:56%; 
+
+        .about_content{ 
+            padding:20px 70px;  
+    
+            h4{
+                color:$color_yellowLight;
+                font-size:3.5rem; 
+                font-family: $font_clicker;
+                margin:20px 0px;  
+            }
+    
+            p{
+                font-size: 1.7rem;   
+                color: $color_greenDark;
+                font-family: $font_nuito;
+                line-height: 1.5;     
+            }  
+        }
+    }
+} 

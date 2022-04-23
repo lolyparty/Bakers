@@ -215,4 +215,55 @@ body {
     transform: translate(-50%, -50%); }
 
 .about {
-  display: flex; }
+  display: flex;
+  background: linear-gradient(47.55deg, #A7B2C3 19.51%, #CCD5DF 31.73%, #D5DEE6 50.37%, #D5DEE6 64.83%); }
+  .about .about_meimage {
+    width: 45%; }
+  .about .about_me {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56%; }
+    .about .about_me .about_content {
+      padding: 20px 70px; }
+      .about .about_me .about_content h4 {
+        color: #cc9d01;
+        font-size: 3.5rem;
+        font-family: "Clicker Script";
+        margin: 20px 0px; }
+      .about .about_me .about_content p {
+        font-size: 1.7rem;
+        color: #664e00;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1.5; }
+
+.works {
+  text-align: center;
+  padding: 35px 10px; }
+  .works .works_content h1 {
+    font-family: "Clicker Script";
+    font-weight: 600;
+    color: black;
+    font-size: 3rem; }
+  .works .works_content .name_underline {
+    align-items: center; }
+    .works .works_content .name_underline .underline_item {
+      width: 50px;
+      display: inline-block;
+      border: 1px solid #e6b001;
+      background-color: #e6b001;
+      align-self: center;
+      margin-bottom: 2px; }
+    .works .works_content .name_underline .underline_img {
+      width: 25px;
+      height: 5px; }
+  .works .works_content p {
+    margin: 10px auto;
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #664e00;
+    max-width: 70%; }
+  .works .works_carouselcontainer {
+    padding: 40px 15px; }

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imgs/NW.svg" >
-    <!-- <link href="" rel="stylesheet"> -->
-    <!-- <link href="" rel="stylesheet"> -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet" type="" />
     <title>Nonso Williams | Private Cake Chef</title>
 </head>
@@ -73,11 +75,47 @@
         </div>
     </div>
     <section class="about">
-        
+        <div class="about_meimage">
+             <img src="/Imgs/Rectangle 3.svg" alt="Nonso William's Picture">
+        </div>
+        <div class="about_me">
+            <div class="about_content">
+                <h4>Hi, I am Nonso Williams</h4>
+                <p>I am a Cake Chef, most folks know me as Nonso but in the inudustry I’m also known as the Fundat King. I have been a Cake Chef for the better part of a decade. I cut my teeth at the Abuja Catering School for Deserts before obtaining a degree at the famous institute of Culinary Education in Pastry Arts, Cake Techniques & Design as well as the Art of International Bread Baking</p>
+            </div>
+        </div>
+    </section>
+    <section class="works">
+        <div class="works_content">
+            <h1>Some Of My Works</h1>
+            <div class="name_underline">
+                <hr class="underline_item"/>
+                <img src="/Imgs/_.svg" alt class="underline_img"/>
+                <hr class="underline_item"/>
+            </div>
+            <p>Here is a compilation of some of the cakes and pastries I ‘ve made  over the years. Please feel free to presuse through them and feed your eyes</p>
+        </div>
+        <div class="works_carouselcontainer">
+            <div class="works_carousel" data-slick='{slidesToShow": 4, "centerMode":true, "centerPadding":50px, }'>
+                <div>
+                    <img src="/Imgs/portfolio-img.svg" alt="">
+                </div>
+                <div>
+                    <img src="/Imgs//portfolio-img (1).svg" alt="">
+                </div>
+                <div>
+                    <img src="/Imgs/portfolio-img (2).svg" alt="">
+                </div>
+            </div>
+        </div>
     </section>
     
 
 
     <script src="index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
 </body>
 </html>

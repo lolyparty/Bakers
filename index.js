@@ -1,5 +1,7 @@
-const loadAnimation = ()=>{
-    document.querySelector('#loadinganimation_container').classList.add('loadanimation')
-}
+// const loadAnimation = ()=>{
+//     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
+// }
 
-window.addEventListener('load', loadAnimation)
+// window.addEventListener('load', loadAnimation)
+
+    $('.works_carousel').slick();
