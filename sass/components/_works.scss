@@ -39,6 +39,12 @@
     }
 
     .works_carouselcontainer{
-        padding:40px 15px;  
-    } 
+        padding:40px 15px;
+        max-width:80%;  
+        margin:0 auto;
+
+        // .slick-slider{
+        //     width:100%;  
+        // }
+    }   
 }
