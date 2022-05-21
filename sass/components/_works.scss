@@ -3,28 +3,21 @@
     padding:35px 10px;  
 
     .works_content{
-        h1{
-            font-family: $font_clicker;
-            font-weight: 600;    
-            color:$color_black;
-            font-size: 3rem;
+        h2{
+            @include section_headings($font_clicker, $color_black)
         }
 
         .name_underline{
             align-items: center;
+            margin-top:15px;  
 
             .underline_item{   
-                width: 50px;     
-                display: inline-block;
-                border:1px solid $color_yellow;
-                background-color: $color_yellow;
-                align-self: center; 
-                margin-bottom:2px;     
+                @include underline_item($color_yellow)  
             }
 
             .underline_img{
-                width:25px;      
-                height:5px;    
+                width:35px;       
+                height:7px;    
             } 
         } 
 

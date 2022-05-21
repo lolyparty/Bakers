@@ -171,7 +171,7 @@ body {
     #hero .right_herosection .name_underline {
       align-items: center; }
       #hero .right_herosection .name_underline .underline_item {
-        width: 50px;
+        width: 70px;
         display: inline-block;
         border: 2px solid #e6b001;
         background-color: #e6b001;
@@ -241,23 +241,24 @@ body {
 .works {
   text-align: center;
   padding: 35px 10px; }
-  .works .works_content h1 {
+  .works .works_content h2 {
     font-family: "Clicker Script";
     font-weight: 600;
     color: black;
     font-size: 3rem; }
   .works .works_content .name_underline {
-    align-items: center; }
+    align-items: center;
+    margin-top: 15px; }
     .works .works_content .name_underline .underline_item {
-      width: 50px;
+      width: 70px;
       display: inline-block;
-      border: 1px solid #e6b001;
+      border: 2px solid #e6b001;
       background-color: #e6b001;
       align-self: center;
       margin-bottom: 2px; }
     .works .works_content .name_underline .underline_img {
-      width: 25px;
-      height: 5px; }
+      width: 35px;
+      height: 7px; }
   .works .works_content p {
     margin: 10px auto;
     padding: 5px;
@@ -269,3 +270,23 @@ body {
     padding: 40px 15px;
     max-width: 80%;
     margin: 0 auto; }
+
+.blogposts_container h2 {
+  font-family: "Clicker Script";
+  font-weight: 600;
+  color: black;
+  font-size: 3rem; }
+
+.blogposts_container .name_underline {
+  align-items: center;
+  margin-top: 15px; }
+  .blogposts_container .name_underline .underline_item {
+    width: 70px;
+    display: inline-block;
+    border: 2px solid #e6b001;
+    background-color: #e6b001;
+    align-self: center;
+    margin-bottom: 2px; }
+  .blogposts_container .name_underline .underline_img {
+    width: 35px;
+    height: 7px; }

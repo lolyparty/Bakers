@@ -36,12 +36,7 @@
             align-items: center;
 
             .underline_item{   
-                width: 50px;     
-                display: inline-block;
-                border:2px solid $color_yellow;
-                background-color: $color_yellow;
-                align-self: center; 
-                margin-bottom:2px;    
+                @include underline_item($color_yellow)    
             }
 
             .underline_img{

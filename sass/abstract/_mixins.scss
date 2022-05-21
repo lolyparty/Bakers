@@ -8,3 +8,19 @@
     left:47%;        
     transform: translate(-50%, -50%); 
 }
+
+@mixin section_headings($font, $color){
+            font-family: $font;
+            font-weight: 600;    
+            color:$color;
+            font-size: 3rem;
+}
+
+@mixin underline_item($color){
+            width: 70px;             
+            display: inline-block;
+            border:2px solid $color;
+            background-color: $color;
+            align-self: center; 
+            margin-bottom:2px;
+}
