@@ -7,12 +7,13 @@
 @import './components/header';
 @import './components/herosection';
 @import './components/whitespace';
-@import './components/about'; 
-@import './components/works';
-@import './components/blogpost';
-@import './components/contact';
+@import './components/homepage/about'; 
+@import './components/homepage/works';
+@import './components/homepage/blogpost';
+@import './components/homepage/contact';
 @import './components/footer' ;
-@import './components/blog_herosection';
-@import './components/blog_blogposts';
+@import './components/blog/blog_herosection';
+@import './components/blog/blog_blogposts';
+@import './components/blogpost/blogpost';
 
 

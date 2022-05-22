@@ -1,0 +1,46 @@
+.blogpost_hero-container{
+     background-size: 71%;
+
+    .whitespace{
+        height:100px; 
+    }
+}
+
+.blogposts_section{
+    font-family:$font_nuito;
+
+
+    .blog_item{
+        
+
+        hr{
+            position: absolute;  
+            bottom:-9%;     
+            width:100%; 
+            @include underline_blog(2px)
+        }
+        
+    }
+
+    .blogposts_container{
+        color:$color_black;
+
+        .blogpost_content{
+            margin:10px 45px; 
+            
+            p{
+                line-height: 1.7; 
+                margin:10px 0px 10px 0px;
+            }
+
+            ul{
+                margin-left:20px;
+
+                li{
+                    margin:10px 0px 10px 0px;
+                }
+    
+            }
+        }
+    }
+}

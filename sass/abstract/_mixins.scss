@@ -24,3 +24,10 @@
             align-self: center; 
             margin-bottom:2px;
 }
+
+@mixin underline_blog($height){
+    background:$color_yellow; 
+            border: none; 
+            margin:5px 0px 10px 0px;
+            height:$height
+}

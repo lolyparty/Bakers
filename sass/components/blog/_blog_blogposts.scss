@@ -11,8 +11,8 @@
         width:70%;
 
         .post_item{
-            height:375px;    
-            width: 90%;  
+            height:365px;     
+            width: 85%;   
             position: relative;
             margin:45px; 
             
@@ -57,7 +57,7 @@
 
                 p{
                     line-height: 1.5;  
-                    font-weight: 400;
+                    font-weight: 300;
                     
                     &:last-child{
                         margin:10px 0px; 
@@ -110,18 +110,12 @@
         margin-top:10px;
 
         .recent_underline{
-            height:1.5px;
-            background:$color_yellow; 
-            border: none; 
-            margin:5px 0px 10px 0px;
+            @include underline_blog(1.5px)
         }
 
 
         .tag_underline{
-        height:2.5px; 
-        background:$color_yellow; 
-        border: none; 
-        margin:5px 0px 10px 0px;
+        @include underline_blog(2.5px)
         }
     }
 

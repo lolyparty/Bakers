@@ -448,8 +448,8 @@ body {
     margin: 5px 15px;
     width: 70%; }
     .blogposts_section .blogposts_container .post_item {
-      height: 375px;
-      width: 90%;
+      height: 365px;
+      width: 85%;
       position: relative;
       margin: 45px; }
       .blogposts_section .blogposts_container .post_item:first-child {
@@ -481,7 +481,7 @@ body {
           margin: 5px 0px; }
         .blogposts_section .blogposts_container .post_item .blog_content p {
           line-height: 1.5;
-          font-weight: 400; }
+          font-weight: 300; }
           .blogposts_section .blogposts_container .post_item .blog_content p:last-child {
             margin: 10px 0px; }
         .blogposts_section .blogposts_container .post_item .blog_content a {
@@ -512,15 +512,15 @@ body {
     display: inline-block;
     margin-top: 10px; }
     .recentpost_container h3 .recent_underline {
-      height: 1.5px;
       background: #e6b001;
       border: none;
-      margin: 5px 0px 10px 0px; }
+      margin: 5px 0px 10px 0px;
+      height: 1.5px; }
     .recentpost_container h3 .tag_underline {
-      height: 2.5px;
       background: #e6b001;
       border: none;
-      margin: 5px 0px 10px 0px; }
+      margin: 5px 0px 10px 0px;
+      height: 2.5px; }
   .recentpost_container ul {
     list-style: none;
     margin: 10px 0px; }
@@ -540,3 +540,29 @@ body {
       border: 1px solid #4b420b;
       border-radius: 4px;
       padding: 10px 25px; }
+
+.blogpost_hero-container {
+  background-size: 71%; }
+  .blogpost_hero-container .whitespace {
+    height: 100px; }
+
+.blogposts_section {
+  font-family: "Nunito Sans", sans-serif; }
+  .blogposts_section .blog_item hr {
+    position: absolute;
+    bottom: -9%;
+    width: 100%;
+    background: #e6b001;
+    border: none;
+    margin: 5px 0px 10px 0px;
+    height: 2px; }
+  .blogposts_section .blogposts_container {
+    color: black; }
+    .blogposts_section .blogposts_container .blogpost_content {
+      margin: 10px 45px; }
+      .blogposts_section .blogposts_container .blogpost_content p {
+        line-height: 1.7;
+        margin: 10px 0px 10px 0px; }
+      .blogposts_section .blogposts_container .blogpost_content ul margin-
+li {
+        margin: 10px 0px 10px 0px; }
