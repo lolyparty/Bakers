@@ -218,13 +218,13 @@ body {
   display: flex;
   background: linear-gradient(47.55deg, #A7B2C3 19.51%, #CCD5DF 31.73%, #D5DEE6 50.37%, #D5DEE6 64.83%); }
   .about .about_meimage {
-    width: 45%; }
+    width: 42%; }
   .about .about_me {
-    padding: 40px 20px;
+    padding: 40px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 56%; }
+    width: 60%; }
     .about .about_me .about_content {
       padding: 20px 70px; }
       .about .about_me .about_content h4 {
@@ -426,3 +426,14 @@ body {
     height: 40px;
     width: 40px;
     margin: 0px 10px; }
+
+.blog_hero {
+  background: url("../../Imgs/header-bg.svg");
+  background-size: 80%;
+  background-color: #F7F7F7;
+  background-position: 100%;
+  background-repeat: no-repeat; }
+  .blog_hero #hero {
+    display: block; }
+    .blog_hero #hero .right_herosection {
+      margin: 0px auto; }

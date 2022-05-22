@@ -1,0 +1,15 @@
+.blog_hero{
+    background:url('../../Imgs/header-bg.svg');
+    background-size:80%;  
+    background-color: #F7F7F7; 
+    background-position: 100%;  
+    background-repeat:no-repeat;
+
+    #hero{
+        display:block;
+
+        .right_herosection{
+            margin:0px auto;
+        }
+    }
+}
