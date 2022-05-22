@@ -1,0 +1,89 @@
+.contact_container{
+    padding:15px 5px 45px 5px; 
+    text-align: center;
+    position: relative;
+
+    .contact_heading{
+        margin:35px auto; 
+
+        h2{
+            @include section_headings($font_clicker, $color_black)
+        }  
+    
+        .name_underline{
+            align-items: center;
+            margin:10px 0px;  
+    
+            .underline_item{   
+                @include underline_item($color_yellow)  
+            }
+    
+            .underline_img{
+                width:60px;     
+                height:7px;    
+            }
+        }
+    } 
+
+    form{
+        margin:45px 0px;  
+        z-index: 10;
+        
+        input{
+            display:block;
+            margin:25px auto; 
+            border: 1px solid rgba(25, 20, 0, 0.2);
+            padding:10px 20px; 
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgb(224, 224, 224); 
+            width:30%;  
+        }
+
+        textarea{
+            width:30%; 
+            border: 1px solid rgba(25, 20, 0, 0.2);
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgb(224, 224, 224);
+            padding:5px; 
+        }
+
+        [value="SEND"]{
+            width:10%;
+            border:none;
+            background:$color_lightgreen;
+            color:#fff; 
+            font-family: $font_nuito;
+            font-weight: 600;
+            cursor:pointer; 
+            margin-top:25px;
+        }
+
+        label{
+            position: absolute !important;
+            height: 1px; 
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap; /* added line */
+        }
+    }
+
+    .contact_background_img{
+            width: 500px;
+            height: 532px;
+            position: absolute;
+            bottom: -5%;    
+            right: 6%;
+            z-index: -1;
+    }
+
+    .contact_background_img2{
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            top: 1%;     
+            left: 13%;  
+            z-index: -1;
+    }
+}

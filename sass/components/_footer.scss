@@ -1,0 +1,24 @@
+.footer{
+    background:$color_lightgreen;
+    padding:20px 45px; 
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+        .footer_heading{
+            font-size:2rem;
+
+            span{
+                font-family:$font_clicker;
+            }
+        }
+
+        .socials{
+            img{
+                height: 40px;
+                width: 40px; 
+                margin: 0px 10px;
+            }
+        }
+}

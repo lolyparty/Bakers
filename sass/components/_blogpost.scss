@@ -1,22 +1,88 @@
 .blogposts_container{
+    padding:10px 5px;
+
     .blogposts_heading{
-        align-items: center;
+        text-align: center;
+        margin:10px auto; 
+
         h2{
             @include section_headings($font_clicker, $color_black)
         }  
     
         .name_underline{
             align-items: center;
-            margin-top:15px;
+            margin-top:10px;  
     
             .underline_item{   
                 @include underline_item($color_yellow)  
             }
     
             .underline_img{
-                width:35px;  
+                width:60px;     
                 height:7px;    
             } 
         }
     } 
+
+    .blog_posts{
+        display: flex;
+        gap:50px;  
+        justify-content: center;
+        margin: 75px 0px;          
+
+        .post_item{
+            height:450px;   
+            width: 500px;
+            position: relative;
+            
+
+            &:first-child{
+                background:url('../../Imgs/card-image.svg');
+                background-size: 100%; 
+            }
+
+            &:last-child{
+                background:url('../../Imgs/card-img.svg');
+                background-size: 100%; 
+            }
+
+            .blog_content{
+                background: #00000080 50%;
+                padding:15px;  
+                color:#fff;
+                font-family: $font_nuito;
+                position: absolute;
+                bottom:5%;
+                left:5%;
+                width: 90%; 
+
+
+                h3{
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 1.2;
+                    margin:5px 0px;
+                }
+
+                p{
+                    line-height: 1.5;  
+                    font-weight: 400;  
+                }
+
+                button{
+                    margin:10px 0px;
+                    padding:10px 15px;
+                    border-radius: 5px;
+                    border:none;
+                    color:#fff;
+                    background:$color_blogpost-button;
+                    font-weight:600;
+                    cursor:pointer;
+                }
+
+            }
+        }
+    }
+
 }
+
