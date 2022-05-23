@@ -1,8 +1,9 @@
 .works{
-    text-align: center;
+    
     padding:35px 10px;  
 
     .works_content{
+        text-align: center;
         h2{
             @include section_headings($font_clicker, $color_black)
         }
@@ -32,12 +33,25 @@
     }
 
     .works_carouselcontainer{
-        padding:40px 15px;
-        max-width:80%;  
+        padding:40px 5px; 
+        width:100%;  
         margin:0 auto;
 
-        // .slick-slider{
-        //     width:100%;  
-        // }
+        .works_carousel{
+
+            .slick-arrow{
+                border:1px solid black;
+            }
+
+            // .slick-list{
+            //     .slick-track{
+            //         width:1150px;  
+
+            //         .slick-current{
+            //             width:350px;      
+            //         }
+            //     }
+            // }
+        }
     }   
 }

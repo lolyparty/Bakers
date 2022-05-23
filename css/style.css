@@ -239,7 +239,6 @@ body {
         line-height: 1.5; }
 
 .works {
-  text-align: center;
   padding: 35px 10px; }
   .works .works_content h2 {
     font-family: "Clicker Script";
@@ -267,9 +266,11 @@ body {
     color: #664e00;
     max-width: 70%; }
   .works .works_carouselcontainer {
-    padding: 40px 15px;
-    max-width: 80%;
+    padding: 40px 5px;
+    width: 100%;
     margin: 0 auto; }
+    .works .works_carouselcontainer .works_carousel .slick-arrow {
+      border: 1px solid black; }
 
 .blogposts_container {
   padding: 10px 5px; }

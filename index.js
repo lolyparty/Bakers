@@ -5,11 +5,12 @@ const loadAnimation = ()=>{
 window.addEventListener('load', loadAnimation)
 
     $('.works_carousel').slick({
-        centerMode:true,
-        centerPadding:'0px',
-        slidePerRow:1,
+        // centerPadding:'0px',
         arrows:true,
         dots:true,
-        slidesPerRow: 1, 
+        slidesPerRow: 1,  
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3, 
 
     });
