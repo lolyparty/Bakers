@@ -39,15 +39,8 @@
             }
 
             .blog_content{
-                background: #00000080 50%;
-                padding:15px;   
-                color:#fff;
-                font-family: $font_nuito;
-                position: absolute; 
-                bottom:5%;
-                left:3%; 
-                width: 60%;  
-
+                @include blogpost_content($font_nuito, 60%);
+                
                 h3{
                     font-weight: 600;
                     font-size: 1.5rem;
@@ -63,8 +56,6 @@
                         margin:10px 0px; 
                     }
                 }
-
-
 
                 a{
                     color:$color_blogpost-button;
@@ -105,7 +96,7 @@
 
 
     h3{
-        font-size:1.5rem;
+        font-size:1.3rem;  
         display: inline-block;
         margin-top:10px;
 
@@ -119,10 +110,6 @@
         }
     }
 
-    
-
-    
-
     ul{
         list-style: none;
         margin:10px 0px;
@@ -133,7 +120,7 @@
             a{
                 color:$color_greenNav;
                 text-decoration: none;
-                font-size:1.3rem;
+                font-size:1.2rem; 
                 font-weight: 400;
             }
         }

@@ -31,3 +31,14 @@
             margin:5px 0px 10px 0px;
             height:$height
 }
+
+@mixin blogpost_content($font, $width){
+    background: #00000080 50%;
+                padding:15px;   
+                color:#fff;
+                font-family: $font;
+                position: absolute; 
+                bottom:5%;
+                left:3%; 
+                width: $width;
+}
