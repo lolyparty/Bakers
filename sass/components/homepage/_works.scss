@@ -1,9 +1,9 @@
 .works{
-    
+    text-align: center;
     padding:35px 10px;  
 
     .works_content{
-        text-align: center;
+        
         h2{
             @include section_headings($font_clicker, $color_black)
         }
@@ -34,24 +34,88 @@
 
     .works_carouselcontainer{
         padding:40px 5px; 
-        width:100%;  
+        text-align: center ;
+        // width:100%;  
         margin:0 auto;
 
         .works_carousel{
 
-            .slick-arrow{
-                border:1px solid black;
+            width: 80%;   
+            margin: 0 auto;
+
+            img{
+                width:100%; 
+                height:550px;     
             }
 
-            // .slick-list{
-            //     .slick-track{
-            //         width:1150px;  
+            .active_img{
+                height:600px;  
+            }
+
+            .slick-arrow{
+
+                &:before{
+                    content:''
+                }
+
+                height:50px;
+                width:50px;
+                
+
+                &:first-child{
+                    background: url('../../../Imgs/Vector\ \(2\).svg');
+                    background-size:50%; 
+                    background-repeat: no-repeat;
+                    
+                    
+                }
+
+                
+            }
+
+            .active{
+                border:1px solid $color_yellowLight; 
+                position:relative;
+                margin-top:-20px; 
+                padding:15px 0px 15px 0px; 
+            }
+
+            .slick-next{  
+                background: url('../../../Imgs/Vector.svg');
+                background-size:50%; 
+                background-repeat: no-repeat;
+            }
+
+            .cupcakes{
+                position:absolute;
+                bottom:10%; 
+                font-size:1.1rem; 
+                left:32%;
+                color:white;
+                border:none;
+                font-family: $font_nuito;
+                border-radius: 3px; 
+                background:$color_blogpost-button; 
+                padding:10px 20px;
+            }
+
+            .slick-list{
+                .slick-track{
+                    width:7150px !important;  
+                    padding-top:20px;  
 
             //         .slick-current{
-            //             width:350px;      
+            //             border: 1px solid black;     
             //         }
-            //     }
-            // }
+
+            //         .slick-slide{
+            //             width:319px !important; 
+            //             margin:0px 20px 0px 20px; 
+            //         }
+                }
+            }
+
+            
         }
     }   
 }
