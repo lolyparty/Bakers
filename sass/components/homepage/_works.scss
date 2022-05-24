@@ -1,0 +1,109 @@
+.works{
+    text-align: center;
+    padding:35px 10px;  
+
+    .works_content{
+        h2{
+            @include section_headings($font_clicker, $color_black)
+        }
+
+        .name_underline{
+            align-items: center;
+            margin-top:15px;  
+
+            .underline_item{   
+                @include underline_item($color_yellow)  
+            }
+
+            .underline_img{
+                width:60px;      
+                height:7px;    
+            } 
+        } 
+
+        p{
+            margin:10px auto; 
+            padding:5px;
+            line-height: 1.5;
+            font-size: 1.5rem;   
+            color:$color_greenDark; 
+            max-width:70%; 
+        }
+    }
+
+    .works_carouselcontainer{
+        padding:40px 5px; 
+        text-align: center ;
+        // width:100%;  
+        margin:0 auto;
+
+        .works_carousel{
+
+            width: 80%;   
+            margin: 0 auto;
+
+            img{
+                width:100%; 
+                height:550px;     
+            }
+
+            .active_img{
+                height:600px;  
+            }
+
+            .slick-arrow{
+
+                &:before{
+                    content:''
+                }
+
+                height:50px;
+                width:50px;
+                
+
+                &:first-child{
+                    background: url('../../../Imgs/Vector\ \(2\).svg');
+                    background-size:50%; 
+                    background-repeat: no-repeat;
+                    
+                    
+                }
+
+                
+            }
+
+            .active{
+                border:1px solid $color_yellowLight; 
+                position:relative;
+                margin-top:-20px; 
+                padding:15px 0px 15px 0px; 
+            }
+
+            .slick-next{  
+                background: url('../../../Imgs/Vector.svg');
+                background-size:50%; 
+                background-repeat: no-repeat;
+            }
+
+            .cupcakes{
+                position:absolute;
+                bottom:10%; 
+                font-size:1.1rem; 
+                left:32%;
+                color:white;
+                border:none;
+                font-family: $font_nuito;
+                border-radius: 3px; 
+                background:$color_blogpost-button; 
+                padding:10px 20px;
+            }
+
+            .slick-list{
+                .slick-track{
+                    width:7150px !important;  
+                    padding-top:20px;
+                }
+            }
+        }
+    }   
+}
