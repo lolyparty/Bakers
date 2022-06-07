@@ -10,6 +10,9 @@ body {
   max-width: 1500px;
   margin: 0 auto; }
 
+.page_container {
+  display: none; }
+
 #loadinganimation_container {
   position: absolute;
   top: 0;
