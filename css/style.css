@@ -10,19 +10,23 @@ body {
   max-width: 1500px;
   margin: 0 auto; }
 
-.loadanimation {
+#loadinganimation_container {
   position: absolute;
-  z-index: 99999999999999999999;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e6b001;
-  animation: animationend 1s ease 4.5s forwards;
   padding: 15px; }
+  #loadinganimation_container #animationlogo {
+    display: none; }
+
+.loadanimation {
+  z-index: 99999999999999999999;
+  height: 100vh;
+  width: 100%;
+  animation: animationend 1s ease 4.5s forwards; }
   .loadanimation #animationlogo {
     animation: logofill 1.5s ease-out forwards 3s; }
     .loadanimation #animationlogo path:nth-child(1) {
