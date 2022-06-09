@@ -1,6 +1,6 @@
 const loadAnimation = ()=>{
     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
-    // document.querySelector('.page_container').style.display = 'block'
+    document.querySelector('.page_container').style.display = 'block'
 }
 
 window.addEventListener('load', loadAnimation)
@@ -39,6 +39,3 @@ window.addEventListener('load', loadAnimation)
     });
 
     document.querySelector('.slick-current').nextSibling.classList.add('active')
-
-
-        
