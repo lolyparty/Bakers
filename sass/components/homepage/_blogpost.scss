@@ -38,7 +38,7 @@
 
             &:first-child{
                 background:url('../../Imgs/card-image.svg');
-                background-size: 100%; 
+                background-size: cover; 
             }
 
             &:last-child{

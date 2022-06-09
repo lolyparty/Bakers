@@ -5,7 +5,6 @@
         .right_herosection{
 
             .ml6 {
-                margin-top:20px;
 
                 .letters{
                     font-size:5rem;         
@@ -70,7 +69,6 @@
 // screen less than 1150
 @media only screen and (max-width:1150px){
         .whitespace{  
-        height:100px;  
 
         &__bigcircle{
             width:300px;
@@ -267,14 +265,14 @@
 
 // screen less than 745
 
-@media only screen and (max-width:765px){  
+@media only screen and (max-width:745px){  
     #hero{
 
         .right_herosection{
 
             .ml6 {
                 .letters{ 
-                    font-size: 4rem;        
+                    font-size: 4rem;         
                 }   
 
             }
@@ -286,34 +284,34 @@
     } 
 
 
-    .blogposts_container{
+    // .blogposts_container{
 
-        .blog_posts{
-            margin-bottom:20px; 
+    //     .blog_posts{
+    //         margin-bottom:20px; 
 
-            .post_item{
-                width:350px;    
-                height:350px; 
+    //         .post_item{
+    //             width:350px;    
+    //             height:350px; 
 
-                .blog_content{
-                    padding:8px;
+    //             .blog_content{
+    //                 padding:8px;
 
-                    h3{
-                        font-size: 1rem; 
-                    }
+    //                 h3{
+    //                     font-size: 1rem; 
+    //                 }
 
-                    p{
-                        font-size: .8rem;   
-                    }
+    //                 p{
+    //                     font-size: .8rem;   
+    //                 }
 
-                    button{
-                        font-weight:400;
-                        padding:7px 10px;  
-                    }
-                }
-            }
-        } 
-    }
+    //                 button{
+    //                     font-weight:400;
+    //                     padding:7px 10px;  
+    //                 }
+    //             }
+    //         }
+    //     } 
+    // }
 
     .works .works_content, .blogposts_container .blogposts_heading, .contact_container .contact_heading{
 
@@ -375,7 +373,6 @@
             width:95%;   
 
             .ml6 {
-                margin-top:5px;
 
                 .letters{
                     font-size:3.5rem;         
@@ -454,16 +451,6 @@
 
 // max-screen 534
 @media only screen and(max-width:534px){
-    #hero{ 
-
-        .right_herosection{
-
-            .ml6 {
-                margin-top:5px;
-            }
-
-        }
-    }
 
     .works{
         .works_content{
@@ -529,6 +516,34 @@
         }
     }
 
+    .blogposts_container{
+
+        .blog_posts{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .post_item{
+                    width:95%;        
+                    height:350px; 
+                    
+                    .blog_content{
+
+                        h3{
+                            font-size:1rem;
+                        }
+
+                        p{
+                            font-size:.8rem;
+                        }
+
+                        button{
+                            font-size:.6rem; 
+                        }
+                    }
+            }
+        }
+    }
+
     .contact_container{
 
         form{
@@ -561,4 +576,34 @@
         }  
     }
 
+}
+
+// screen max 325px
+@media only screen and (max-width:325px){  
+    #hero{ 
+
+        .right_herosection{
+
+            .ml6 {
+
+                .letters{
+                    font-size:2.8rem;           
+                }
+            }
+
+            .name_underline{
+                margin-top:-45px;  
+            } 
+
+            .social{
+                img{
+                    height:30px;   
+                    width:30px;   
+                    margin:5px;  
+                }
+            }
+
+            
+        }
+    }  
 }
