@@ -432,7 +432,7 @@ body {
       display: block;
       margin: 25px auto;
       border: 1px solid rgba(25, 20, 0, 0.2);
-      padding: 10px 20px;
+      padding: 10px 20px 10px 10px;
       border-radius: 5px;
       box-shadow: 1px 1px 5px #e0e0e0;
       width: 30%; }
@@ -441,7 +441,7 @@ body {
       border: 1px solid rgba(25, 20, 0, 0.2);
       border-radius: 5px;
       box-shadow: 1px 1px 5px #e0e0e0;
-      padding: 5px; }
+      padding: 10px; }
     .contact_container form [value="SEND"] {
       width: 10%;
       border: none;
@@ -450,7 +450,20 @@ body {
       font-family: "Nunito Sans", sans-serif;
       font-weight: 600;
       cursor: pointer;
-      margin-top: 25px; }
+      margin-top: 25px;
+      padding: 10px 15px; }
+      .contact_container form [value="SEND"]:hover {
+        transition: 1s;
+        transform: scale(0.98);
+        -webkit-transform: scale(0.98); }
+      .contact_container form [value="SEND"]:active {
+        animation: btnpress 2s ease forwards; }
+
+@keyframes btnpress {
+  0% {
+    transform: scale(0.92); }
+  100% {
+    transform: scale(1); } }
     .contact_container form label {
       position: absolute !important;
       height: 1px;
@@ -712,8 +725,8 @@ body {
     width: 300px;
     height: 300px; }
   .whitespace__smallcircle {
-    width: 250px;
-    height: 250px; }
+    width: 270px;
+    height: 270px; }
   .whitespace__bigcircle, .whitespace__smallcircle {
     top: 55%;
     left: 43%; }
@@ -746,6 +759,10 @@ body {
   .blogposts_container .blog_posts .post_item {
     width: 410px;
     height: 420px; }
+    .blogposts_container .blog_posts .post_item .blog_content {
+      bottom: 2%;
+      left: 2%;
+      width: 96%; }
   .contact_container .contact_background_img {
     right: 1%;
     bottom: 10%;
@@ -761,6 +778,13 @@ body {
     justify-content: center; }
     #hero .left_herosection {
       display: none; }
+  .blogposts_container .blog_posts {
+    margin-bottom: 20px; }
+    .blogposts_container .blog_posts .post_item {
+      width: 95%;
+      height: 350px; }
+      .blogposts_container .blog_posts .post_item .blog_content {
+        padding: 4px; }
   .about {
     z-index: 99999999999999; }
     .about .about_me {
@@ -776,13 +800,13 @@ body {
     height: 120px;
     overflow: hidden; }
     .whitespace__bigcircle {
-      width: 250px;
-      height: 250px; }
+      width: 300px;
+      height: 300px; }
     .whitespace__smallcircle {
-      width: 200px;
-      height: 200px; }
+      width: 270px;
+      height: 270px; }
     .whitespace__bigcircle, .whitespace__smallcircle {
-      top: 110%;
+      top: 130%;
       left: 50%; }
   .works .works_content p {
     max-width: 95%; }
@@ -801,6 +825,17 @@ body {
     font-size: 1.2rem; }
   .works .works_content h2, .blogposts_container .blogposts_heading h2, .contact_container .contact_heading h2 {
     font-size: 2rem; }
+  .blogposts_container .blog_posts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    .blogposts_container .blog_posts .post_item {
+      width: 82%;
+      height: 300px;
+      margin-top: 20px; }
+      .blogposts_container .blog_posts .post_item .blog_content {
+        padding: 8px; }
   .contact_container form input {
     width: 47%; }
   .contact_container form textarea {
@@ -879,10 +914,19 @@ body {
     left: 0%; } }
 
 @media only screen and (max-width: 426px) {
+  .hero_container header {
+    padding-left: 5px; }
+    .hero_container header .logo {
+      margin-left: 0px;
+      align-self: flex-start; }
   .about .about_me {
-    width: 90%; }
+    width: 85%; }
     .about .about_me .about_content h4 {
       font-size: 1.9rem; }
+    .about .about_me .about_content p {
+      font-size: .9rem; }
+  .works .works_content p {
+    font-size: .9rem; }
   .blogposts_container .blog_posts {
     flex-direction: column;
     justify-content: center;
@@ -890,12 +934,16 @@ body {
     .blogposts_container .blog_posts .post_item {
       width: 95%;
       height: 350px; }
-      .blogposts_container .blog_posts .post_item .blog_content h3 {
-        font-size: 1rem; }
-      .blogposts_container .blog_posts .post_item .blog_content p {
-        font-size: .8rem; }
-      .blogposts_container .blog_posts .post_item .blog_content button {
-        font-size: .6rem; }
+      .blogposts_container .blog_posts .post_item .blog_content {
+        bottom: 2%;
+        left: 2%;
+        width: 96%; }
+        .blogposts_container .blog_posts .post_item .blog_content h3 {
+          font-size: 1rem; }
+        .blogposts_container .blog_posts .post_item .blog_content p {
+          font-size: .8rem; }
+        .blogposts_container .blog_posts .post_item .blog_content button {
+          font-size: .6rem; }
   .contact_container form input {
     width: 75%; }
   .contact_container form textarea {
@@ -903,15 +951,21 @@ body {
   .contact_container form [value="SEND"] {
     width: 35%; }
   .contact_container .contact_background_img {
-    right: -15%;
-    bottom: 15%;
+    right: -17%;
+    bottom: 18%;
     height: 351px;
     width: 172px; }
   .contact_container .contact_background_img2 {
     width: 180px;
     height: 300px;
     top: 10%;
-    left: -10%; } }
+    left: -10%; }
+  .footer .footer_heading {
+    font-size: 1.5rem; }
+  .footer .socials img {
+    height: 30px;
+    width: 30px;
+    margin: 0px 7px; } }
 
 @media only screen and (max-width: 325px) {
   #hero .right_herosection .ml6 .letters {
@@ -921,4 +975,18 @@ body {
   #hero .right_herosection .social img {
     height: 30px;
     width: 30px;
-    margin: 5px; } }
+    margin: 5px; }
+  .works .works_content h2, .blogposts_container .blogposts_heading h2, .contact_container .contact_heading h2 {
+    font-size: 1.5rem; }
+  .about .about_me {
+    width: 95%; }
+    .about .about_me .about_content h4 {
+      font-size: 1.5rem; }
+    .about .about_me .about_content p {
+      font-size: .9rem; }
+  .contact_container form input {
+    width: 85%; }
+  .contact_container form textarea {
+    width: 85%; }
+  .contact_container form [value="SEND"] {
+    width: 45%; } }
