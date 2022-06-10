@@ -858,7 +858,8 @@ body {
     display: none; }
   #hero .right_herosection {
     width: 95%; }
-    #hero .right_herosection .ml6 .letters {
+    #hero .right_herosection .ml6 margin-top
+.letters {
       font-size: 3.5rem; }
   .about {
     justify-content: center; }
