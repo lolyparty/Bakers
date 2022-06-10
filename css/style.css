@@ -200,7 +200,7 @@ body {
       #hero .right_herosection .name_underline .underline_item {
         width: 70px;
         display: inline-block;
-        border: 2px solid #e6b001;
+        border: 1.5px solid #e6b001;
         background-color: #e6b001;
         align-self: center;
         margin-bottom: 2px; }
@@ -279,7 +279,7 @@ body {
     .works .works_content .name_underline .underline_item {
       width: 70px;
       display: inline-block;
-      border: 2px solid #e6b001;
+      border: 1.5px solid #e6b001;
       background-color: #e6b001;
       align-self: center;
       margin-bottom: 2px; }
@@ -354,7 +354,7 @@ body {
       .blogposts_container .blogposts_heading .name_underline .underline_item {
         width: 70px;
         display: inline-block;
-        border: 2px solid #e6b001;
+        border: 1.5px solid #e6b001;
         background-color: #e6b001;
         align-self: center;
         margin-bottom: 2px; }
@@ -421,7 +421,7 @@ body {
       .contact_container .contact_heading .name_underline .underline_item {
         width: 70px;
         display: inline-block;
-        border: 2px solid #e6b001;
+        border: 1.5px solid #e6b001;
         background-color: #e6b001;
         align-self: center;
         margin-bottom: 2px; }
@@ -510,9 +510,9 @@ body {
 
 .blog_hero {
   background: url("../../Imgs/header-bg.svg");
-  background-size: 80%;
+  background-size: 100%;
   background-color: #F7F7F7;
-  background-position: 100%;
+  background-position: right top;
   background-repeat: no-repeat; }
   .blog_hero #hero {
     display: block; }
@@ -721,7 +721,9 @@ body {
     .about .about_meimage img {
       width: 100%; }
   .about .about_me .about_content {
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  .blogposts_section .blogposts_container .post_item .blog_content {
+    width: 80%; } }
 
 @media only screen and (max-width: 1150px) {
   .whitespace__bigcircle {
@@ -746,7 +748,13 @@ body {
     bottom: 2%;
     width: 300px; }
   .contact_container .contact_background_img2 {
-    left: 5%; } }
+    left: 5%; }
+  .blog_hero .whitespace {
+    height: 100px; }
+  .blogposts_section .blogposts_container .post_item {
+    width: 95%; }
+    .blogposts_section .blogposts_container .post_item .blog_content {
+      width: 90%; } }
 
 @media only screen and (max-width: 1000px) {
   .about .about_meimage {
@@ -772,7 +780,11 @@ body {
     width: 350px;
     height: 372px; }
   .contact_container .contact_background_img2 {
-    left: 1%; } }
+    left: 1%; }
+  .blogposts_section .blogposts_container .post_item {
+    margin: 20px 10px; }
+    .blogposts_section .blogposts_container .post_item .blog_content {
+      width: 90%; } }
 
 @media only screen and (max-width: 890px) {
   .hero_container header nav {
@@ -799,6 +811,10 @@ body {
           font-size: 2.3rem; }
         .about .about_me .about_content p {
           font-size: 1.2rem; }
+  .works .works_content .name_underline, .blogposts_container .blogposts_heading .name_underline, .contact_container .contact_heading .name_underline {
+    margin-top: 3px; }
+    .works .works_content .name_underline .underline_img, .blogposts_container .blogposts_heading .name_underline .underline_img, .contact_container .contact_heading .name_underline .underline_img {
+      width: 35px; }
   .whitespace {
     height: 120px;
     overflow: hidden; }
@@ -819,15 +835,33 @@ body {
     width: 300px;
     height: 372px; }
   .contact_container .contact_background_img2 {
-    left: -5%; } }
+    left: -5%; }
+  .blog_hero .whitespace {
+    height: 50px; }
+  .blogposts_section {
+    gap: 10px; }
+    .blogposts_section .blogposts_container {
+      padding-right: 2px;
+      padding-left: 2px;
+      margin-right: 5px;
+      margin-left: 5px; } }
 
 @media only screen and (max-width: 745px) {
   #hero .right_herosection .ml6 .letters {
     font-size: 4rem; }
+  #hero .right_herosection .name_underline .underline_img {
+    height: 6px;
+    width: 30px; }
+  #hero .right_herosection .name_underline .underline_item {
+    width: 45px;
+    border: 1px solid #e6b001; }
   #hero .right_herosection h3 {
     font-size: 1.2rem; }
   .works .works_content h2, .blogposts_container .blogposts_heading h2, .contact_container .contact_heading h2 {
     font-size: 2rem; }
+  .works .works_content .name_underline .underline_item, .blogposts_container .blogposts_heading .name_underline .underline_item, .contact_container .contact_heading .name_underline .underline_item {
+    width: 45px;
+    border: 1px solid #e6b001; }
   .blogposts_container .blog_posts {
     flex-direction: column;
     justify-content: center;

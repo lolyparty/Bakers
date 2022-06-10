@@ -19,7 +19,7 @@
 @mixin underline_item($color){
             width: 70px; 
             display: inline-block;
-            border:2px solid $color;
+            border:1.5px solid $color; 
             background-color: $color;
             align-self: center; 
             margin-bottom:2px;

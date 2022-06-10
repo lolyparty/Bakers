@@ -27,7 +27,6 @@
                 }
             }
 
-            
         }
     }  
 
@@ -61,6 +60,19 @@
             .about_content{
                 padding-right: 20px;
             }
+        }
+    }
+
+    // blopposts page media query
+    .blogposts_section{
+        .blogposts_container{
+
+                .post_item {  
+    
+                    .blog_content{  
+                        width:80%;      
+                    }
+                } 
         }
     }
 }
@@ -119,6 +131,27 @@
             left:5%;  
         }
     }
+
+     // blopposts page media query
+     .blog_hero{
+         .whitespace{
+             height:100px;
+         }
+     }   
+    
+     .blogposts_section{
+        .blogposts_container{
+
+                .post_item {  
+                    width:95%;
+
+    
+                    .blog_content{
+                        width:90%;       
+                    }
+                } 
+        }
+    }
          
 }
 
@@ -169,6 +202,8 @@
         } 
     }
 
+    
+
     .contact_container{
 
         .contact_background_img {
@@ -183,6 +218,19 @@
         }
     }
         
+    // blopposts page media query
+    .blogposts_section{
+        .blogposts_container{
+
+                .post_item {  
+                    margin:20px 10px; 
+                
+                    .blog_content{
+                        width:90%;       
+                    }
+                } 
+        }
+    }
 }
 
 
@@ -243,6 +291,17 @@
         }
     }
 
+    .works .works_content, .blogposts_container .blogposts_heading, .contact_container .contact_heading{
+
+        .name_underline{
+            margin-top:3px; 
+            
+            .underline_img{
+                width:35px;  
+            }
+        }
+    }
+
     .whitespace{  
         height:120px;     
         overflow: hidden;
@@ -284,6 +343,25 @@
             left:-5%;     
         }
     }
+
+    // blopposts page media query
+    .blog_hero{
+        .whitespace{
+            height:50px;   
+    
+        }
+    }  
+
+    .blogposts_section{
+        gap:10px;
+        
+        .blogposts_container{
+            padding-right:2px;
+            padding-left:2px;
+            margin-right:5px;
+            margin-left:5px;
+        }
+    }
 }
 
 // screen less than 745
@@ -300,6 +378,18 @@
 
             }
 
+            .name_underline{
+                .underline_img{
+                    height:6px;
+                    width:30px;
+                }
+
+                .underline_item{
+                    width:45px;
+                    border:1px solid #e6b001;  
+                }
+            }
+
             h3{
                 font-size:1.2rem;  
             }
@@ -310,7 +400,14 @@
 
             h2{
                 font-size:2rem;
-        }
+            }
+
+            .name_underline{
+                .underline_item{
+                    width:45px;
+                    border:1px solid #e6b001;  
+                }
+            }
     }
 
     .blogposts_container{
