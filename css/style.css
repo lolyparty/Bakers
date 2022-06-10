@@ -10,6 +10,9 @@ body {
   max-width: 1500px;
   margin: 0 auto; }
 
+.page_container {
+  display: none; }
+
 #loadinganimation_container {
   position: fixed;
   top: 0;
@@ -858,9 +861,10 @@ body {
     display: none; }
   #hero .right_herosection {
     width: 95%; }
-    #hero .right_herosection .ml6 margin-top
-.letters {
-      font-size: 3.5rem; }
+    #hero .right_herosection .ml6 {
+      margin-top: 50px; }
+      #hero .right_herosection .ml6 .letters {
+        font-size: 3.5rem; }
   .about {
     justify-content: center; }
     .about .about_meimage {

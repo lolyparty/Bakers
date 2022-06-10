@@ -3,7 +3,7 @@ const loadAnimation = ()=>{
     document.querySelector('.page_container').style.display = 'block'
 }
 
-window.addEventListener('DOMContentLoaded', loadAnimation)
+window.addEventListener('load', loadAnimation)
 
 
 // anime js for naimations
