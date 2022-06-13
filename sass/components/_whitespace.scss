@@ -5,12 +5,17 @@
     z-index: 4;  
 
     &__bigcircle{
-        @include circle_positioning($color_bigCircle, $bigCircle_dimension, $bigCircle_dimension);
-        
+        @include circle_positioning($color_bigCircle, $bigCircle_dimension, $bigCircle_dimension); 
+        animation: scalecircle 1.7s cubic-bezier(.47,-0.04,.24,1.48) forwards;  
+        @include circleanimation(scalecircle, 0, 1); 
     }
 
     &__smallcircle{
-        @include circle_positioning($color_smallCicle, $smallCircle_dimension, $smallCircle_dimension)
+        @include circle_positioning($color_smallCicle, $smallCircle_dimension, $smallCircle_dimension);
+        animation: scalecircle 1.8s cubic-bezier(.47,-0.04,.24,1.48) forwards;       
+        @include circleanimation(scalecircle, 0, 1);
     }
+
+    
 
 }

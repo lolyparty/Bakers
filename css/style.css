@@ -247,7 +247,14 @@ body {
     height: 450px;
     top: 28%;
     left: 47%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    animation: scalecircle 1.7s cubic-bezier(0.47, -0.04, 0.24, 1.48) forwards; }
+
+@keyframes scalecircle {
+  0% {
+    transform: translate(-50%, -50%) scale(0); }
+  100% {
+    transform: translate(-50%, -50%) scale(1); } }
   .whitespace__smallcircle {
     position: absolute;
     border-radius: 50%;
@@ -256,7 +263,14 @@ body {
     height: 400px;
     top: 28%;
     left: 47%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    animation: scalecircle 1.8s cubic-bezier(0.47, -0.04, 0.24, 1.48) forwards; }
+
+@keyframes scalecircle {
+  0% {
+    transform: translate(-50%, -50%) scale(0); }
+  100% {
+    transform: translate(-50%, -50%) scale(1); } }
 
 .about {
   display: flex;

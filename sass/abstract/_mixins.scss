@@ -9,6 +9,19 @@
     transform: translate(-50%, -50%); 
 }
 
+@mixin circleanimation ($name, $initailscale, $finalscale){
+    @keyframes  #{$name}{
+        0%{       
+            transform: translate(-50%, -50%) scale($initailscale);
+        }
+        100%{           
+            transform: translate(-50%, -50%) scale($finalscale);
+        }
+    } 
+}
+
+
+
 @mixin section_headings($font, $color){
             font-family: $font;
             font-weight: 600;    
