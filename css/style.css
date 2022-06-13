@@ -165,14 +165,24 @@ body {
   position: relative; }
   #hero .left_herosection {
     position: relative;
-    width: 45%; }
+    width: 45%;
+    margin-top: -130px; }
     #hero .left_herosection img {
-      margin-top: -130px;
       position: relative;
       z-index: 0;
       width: 100%;
       object-fit: cover;
-      height: 100%; }
+      height: 100%;
+      object-fit: cover; }
+    #hero .left_herosection .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background: linear-gradient(111.34deg, #F0F0F0 0%, #EBECED 57.2%, #efefef);
+      animation: slowreveal 3s ease-in-out forwards; }
   #hero .right_herosection {
     display: flex;
     justify-content: center;
@@ -218,10 +228,17 @@ body {
       width: 50px;
       margin: 5px; }
 
+@keyframes slowreveal {
+  0% {
+    height: 100%; }
+  100% {
+    height: 0%; } }
+
 .whitespace {
   position: relative;
   width: 100%;
-  height: 150px; }
+  height: 150px;
+  z-index: 4; }
   .whitespace__bigcircle {
     position: absolute;
     border-radius: 50%;

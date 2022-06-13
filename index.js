@@ -1,6 +1,8 @@
 const loadAnimation = ()=>{
     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
-        document.querySelector('.page_container').style.display = 'block'
+    setTimeout(()=>{
+            document.querySelector('.page_container').style.display = 'block'
+    }, 3000)
 }
 
 window.addEventListener('load', loadAnimation)
@@ -15,6 +17,7 @@ window.addEventListener('load', loadAnimation)
         targets: '.ml6 .letter',
         opacity:0,
         duration:2300,
+        delay:1000, 
     })
     .add({
         targets: '.ml6 .letter',

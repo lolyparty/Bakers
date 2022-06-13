@@ -6,14 +6,27 @@
     .left_herosection{
         position:relative;
         width:45%;
+        margin-top:-130px;
         
                 img{
-                    margin-top:-130px;
+                    
                     position: relative;  
                     z-index: 0;  
                     width:100%; 
                     object-fit: cover;
                     height: 100%; 
+                    object-fit: cover;
+                }
+
+                .overlay{
+                    position: absolute;
+                    bottom:0;
+                    left:0; 
+                    height:100%;
+                    width:100%;
+                    z-index:1;
+                    background: linear-gradient(111.34deg, #F0F0F0 0%, #EBECED 57.2%, rgba(239, 239, 239, 7));   
+                    animation: slowreveal 3s ease-in-out forwards;  
                 }
     }
 
@@ -78,3 +91,12 @@
         }
     }
 } 
+
+@keyframes slowreveal {
+    0%{
+        height:100%
+    }
+    100%{
+        height:0%;
+    }
+}
