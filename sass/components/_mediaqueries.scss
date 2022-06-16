@@ -223,7 +223,24 @@
         }
     }
 
-    // blog page media query
+    // blogpost page media query
+    #blogpost-page{
+        
+        .blogposts_container{
+
+            .blogpost_item{
+                width:98%;  
+            }
+
+            .blogpost_content{
+                margin-right:10px;
+                margin-left:10px; 
+                p{
+                    margin-top:40px; 
+                }
+            }
+        }
+    }
     
 }
 
@@ -364,6 +381,11 @@
             display:none;
         }
     }
+
+    // blogpost page media query
+    #blogpost-page{
+
+    }
 }
 
 // screen less than 745
@@ -381,6 +403,8 @@
             }
 
             .name_underline{
+                margin-top:-58px;
+                
                 .underline_img{
                     height:6px;
                     width:30px;
@@ -389,7 +413,7 @@
                 .underline_item{
                     width:45px;
                     border:1px solid #e6b001;  
-                }
+                } 
             }
 
             h3{
@@ -560,6 +584,18 @@
             left:5%;      
         }
     }
+
+    // blogpost page media query
+    #blogpost-page{
+        
+        .blogposts_container{
+            width:99%;
+            margin-right:5px;
+            margin-left:5px;
+            padding-left:5px;
+            padding-right:5px;
+        }
+    }
 }
 
 // max-screen 534
@@ -614,7 +650,7 @@
 
     // blog page media query
     .blog_hero{
-        
+
         #hero{
 
             .right_herosection{
@@ -650,6 +686,17 @@
             display:none;
         }
     }
+
+    // blogpost page media query
+    #blogpost-page{
+        
+        .blogposts_container{
+           
+            .blogpost_item{
+                margin-left:0px;
+            }
+        }
+    }
 }
 
 // max screen 425
@@ -663,6 +710,15 @@
                 align-self: flex-start; 
             }
         } 
+
+        #hero{
+            .right_herosection{
+                .name_underline{
+                    margin-top:-58px;
+    
+                }
+            }
+        }  
     } 
 
     .about{

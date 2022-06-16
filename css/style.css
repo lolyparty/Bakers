@@ -667,7 +667,7 @@ body {
     color: black;
     width: 70%; }
     .blogposts_section .blogposts_container .blogpost_item {
-      width: 90% !important; }
+      width: 90%; }
       .blogposts_section .blogposts_container .blogpost_item hr {
         position: absolute;
         bottom: -9%;
@@ -817,7 +817,14 @@ body {
   .blogposts_section .blogposts_container .post_item {
     margin: 20px 10px; }
     .blogposts_section .blogposts_container .post_item .blog_content {
-      width: 90%; } }
+      width: 90%; }
+  #blogpost-page .blogposts_container .blogpost_item {
+    width: 98%; }
+  #blogpost-page .blogposts_container .blogpost_content {
+    margin-right: 10px;
+    margin-left: 10px; }
+    #blogpost-page .blogposts_container .blogpost_content p {
+      margin-top: 40px; } }
 
 @media only screen and (max-width: 890px) {
   .hero_container header nav {
@@ -884,12 +891,14 @@ body {
 @media only screen and (max-width: 745px) {
   #hero .right_herosection .ml6 .letters {
     font-size: 4rem; }
-  #hero .right_herosection .name_underline .underline_img {
-    height: 6px;
-    width: 30px; }
-  #hero .right_herosection .name_underline .underline_item {
-    width: 45px;
-    border: 1px solid #e6b001; }
+  #hero .right_herosection .name_underline {
+    margin-top: -58px; }
+    #hero .right_herosection .name_underline .underline_img {
+      height: 6px;
+      width: 30px; }
+    #hero .right_herosection .name_underline .underline_item {
+      width: 45px;
+      border: 1px solid #e6b001; }
   #hero .right_herosection h3 {
     font-size: 1.2rem; }
   .works .works_content h2, .blogposts_container .blogposts_heading h2, .contact_container .contact_heading h2 {
@@ -963,7 +972,13 @@ body {
     width: 180px; }
   .contact_container .contact_background_img2 {
     width: 200px;
-    left: 5%; } }
+    left: 5%; }
+  #blogpost-page .blogposts_container {
+    width: 99%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px; } }
 
 @media only screen and (max-width: 534px) {
   .works .works_content p {
@@ -1001,7 +1016,9 @@ body {
       .blogposts_section .blogposts_container .post_item .blog_content {
         width: 94%; }
     .blogposts_section .recentpost_flex {
-      display: none; } }
+      display: none; }
+  #blogpost-page .blogposts_container .blogpost_item {
+    margin-left: 0px; } }
 
 @media only screen and (max-width: 426px) {
   .hero_container header {
@@ -1009,6 +1026,8 @@ body {
     .hero_container header .logo {
       margin-left: 0px;
       align-self: flex-start; }
+  .hero_container #hero .right_herosection .name_underline {
+    margin-top: -58px; }
   .about .about_me {
     width: 85%; }
     .about .about_me .about_content h4 {
