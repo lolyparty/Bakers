@@ -2,10 +2,10 @@ const loadAnimation = ()=>{
     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
     setTimeout(()=>{
             document.querySelector('.page_container').style.display = 'block'
-    }, 3000)
+    }, 3500)
 }
 
-window.addEventListener('load', loadAnimation)
+window.addEventListener('load', loadAnimation);
 
 
 // anime js for naimations
@@ -17,7 +17,7 @@ window.addEventListener('load', loadAnimation)
         targets: '.ml6 .letter',
         opacity:0,
         duration:2300,
-        delay:1000, 
+        delay:2000,  
     })
     .add({
         targets: '.ml6 .letter',
@@ -31,14 +31,14 @@ window.addEventListener('load', loadAnimation)
 
 
 //slick carousel
-    $('.works_carousel').slick({
-        // centerPadding:'0px',
-        arrows:true,
-        dots:true,
-        // slidesPerRow: 1,  
-        // centerMode: true,
-        // centerPadding: '-10px',   
-        slidesToShow: 3, 
-    });
+    // $('.works_carousel').slick({
+    //     // centerPadding:'0px',
+    //     arrows:true,
+    //     dots:true,
+    //     // slidesPerRow: 1,  
+    //     // centerMode: true,
+    //     // centerPadding: '-10px',   
+    //     slidesToShow: 3, 
+    // });
 
-    document.querySelector('.slick-current').nextSibling.classList.add('active')
+    // document.querySelector('.slick-current').nextSibling.classList.add('active');

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+
 $color_heroBackground: linear-gradient(111.34deg, #F0F0F0 0%, #EBECED 57.2%, rgba(239, 239, 239, 0) 100%);
 $color_greenNav:rgba(75, 66, 11, 1);
 $color_greenDark: rgba(102, 78, 0, 1);
@@ -21,7 +24,7 @@ $color_blogpost_page:rgba(247, 247, 247, 1);
 
 // font families
 $font_clicker:'Clicker Script';
-$font_nuito:'Nunito Sans', sans-serif;
+$font_nuito:'Nunito Sans';
 
 $bigCircle_dimension:450px;
 $smallCircle_dimension:400px;

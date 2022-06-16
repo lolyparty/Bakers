@@ -19,24 +19,24 @@
 
             &:first-child{
                 background:url('../../Imgs/card-image.svg');
-                background-size: 100%; 
+                background-size: cover; 
                 margin-top:35px; 
             }
 
             &:nth-child(2){
                 background: url('../../Imgs/card-image\ \(3\).svg');
-                background-size: 180%;  
+                background-size: cover;  
             }
 
             &:nth-child(3){
                 background:url('../../Imgs/card-image\ \(4\).svg'); 
-                background-size: 150%; 
+                background-size: cover; 
                 background-repeat: no-repeat; 
             }
 
             &:nth-child(4){
                 background:url('../../Imgs/card-img.svg');
-                background-size: 100%; 
+                background-size: cover; 
             }
 
             .blog_content{

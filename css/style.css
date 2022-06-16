@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -139,7 +141,7 @@ body {
       padding: 5px;
       width: 55%; }
       .hero_container header nav ul {
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         list-style: none;
         display: flex;
         justify-content: space-evenly; }
@@ -219,7 +221,7 @@ body {
         height: 8px; }
     #hero .right_herosection h3 {
       margin: 15px 0px;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: "Nunito Sans";
       font-weight: 400;
       font-size: 2rem;
       color: #191400; }
@@ -293,7 +295,7 @@ body {
       .about .about_me .about_content p {
         font-size: 1.7rem;
         color: #664e00;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         line-height: 1.5; }
 
 .works {
@@ -361,7 +363,7 @@ body {
         left: 32%;
         color: white;
         border: none;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         border-radius: 3px;
         background: #adb901;
         padding: 10px 20px; }
@@ -411,7 +413,7 @@ body {
         background: #00000080 50%;
         padding: 15px;
         color: #fff;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         position: absolute;
         bottom: 5%;
         left: 5%;
@@ -481,7 +483,7 @@ body {
       border: none;
       background: #bbc443;
       color: #fff;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: "Nunito Sans";
       font-weight: 600;
       cursor: pointer;
       margin-top: 25px;
@@ -566,23 +568,23 @@ body {
       margin: 45px; }
       .blogposts_section .blogposts_container .post_item:first-child {
         background: url("../../Imgs/card-image.svg");
-        background-size: 100%;
+        background-size: cover;
         margin-top: 35px; }
       .blogposts_section .blogposts_container .post_item:nth-child(2) {
         background: url("../../Imgs/card-image (3).svg");
-        background-size: 180%; }
+        background-size: cover; }
       .blogposts_section .blogposts_container .post_item:nth-child(3) {
         background: url("../../Imgs/card-image (4).svg");
-        background-size: 150%;
+        background-size: cover;
         background-repeat: no-repeat; }
       .blogposts_section .blogposts_container .post_item:nth-child(4) {
         background: url("../../Imgs/card-img.svg");
-        background-size: 100%; }
+        background-size: cover; }
       .blogposts_section .blogposts_container .post_item .blog_content {
         background: #00000080 50%;
         padding: 15px;
         color: #fff;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         position: absolute;
         bottom: 5%;
         left: 3%;
@@ -616,7 +618,7 @@ body {
   padding: 25px 5px 25px 25px;
   border-radius: 3px;
   background: rgba(173, 185, 1, 0.1);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   color: #4b420b;
   margin-top: 45px;
   max-width: 90%; }
@@ -660,7 +662,7 @@ body {
     height: 100px; }
 
 .blogposts_section {
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Nunito Sans"; }
   .blogposts_section .blogposts_container {
     color: black;
     width: 70%; }
@@ -702,7 +704,7 @@ body {
         background: #00000080 50%;
         padding: 15px;
         color: #fff;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "Nunito Sans";
         position: absolute;
         bottom: 5%;
         left: 3%;
@@ -752,9 +754,7 @@ body {
     .about .about_meimage img {
       width: 100%; }
   .about .about_me .about_content {
-    padding-right: 20px; }
-  .blogposts_section .blogposts_container .post_item .blog_content {
-    width: 80%; } }
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 1150px) {
   .whitespace__bigcircle {
@@ -812,6 +812,8 @@ body {
     height: 372px; }
   .contact_container .contact_background_img2 {
     left: 1%; }
+  .blog_hero {
+    background-size: cover; }
   .blogposts_section .blogposts_container .post_item {
     margin: 20px 10px; }
     .blogposts_section .blogposts_container .post_item .blog_content {
@@ -869,13 +871,15 @@ body {
     left: -5%; }
   .blog_hero .whitespace {
     height: 50px; }
+  .blog_hero #hero .right_herosection {
+    margin: 0 auto; }
   .blogposts_section {
-    gap: 10px; }
+    flex-direction: column;
+    align-items: center; }
     .blogposts_section .blogposts_container {
-      padding-right: 2px;
-      padding-left: 2px;
-      margin-right: 5px;
-      margin-left: 5px; } }
+      width: 95%; }
+    .blogposts_section .recentpost_flex {
+      display: none; } }
 
 @media only screen and (max-width: 745px) {
   #hero .right_herosection .ml6 .letters {
@@ -981,7 +985,23 @@ body {
     width: 180px;
     height: 300px;
     top: 10%;
-    left: 0%; } }
+    left: 0%; }
+  .blog_hero #hero .right_herosection .ml6 {
+    margin-top: 10px; }
+  .blogposts_section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+    .blogposts_section .blogposts_container {
+      width: 100%;
+      margin-right: 5px;
+      margin-left: 5px;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .blogposts_section .blogposts_container .post_item .blog_content {
+        width: 94%; }
+    .blogposts_section .recentpost_flex {
+      display: none; } }
 
 @media only screen and (max-width: 426px) {
   .hero_container header {
