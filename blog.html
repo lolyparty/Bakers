@@ -11,18 +11,21 @@
 <body>
     <section class="hero_container blog_hero">
         <header>
-                <div class="logo">
-                    <img src="Imgs/NW.svg" alt="Logo image" class="logo_img"/>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">PORTFOLIO</a></li>
-                        <li><a href="blog.html"><span></span>BLOG</a></li>
-                        <li><a href="">CONTACT</a></li>
-                    </ul>
-                </nav>
+            <div class="hamburger-menu">
+                <span class="hamburger_layer"></span>
+            </div>
+            <div class="logo">
+                <img src="Imgs/NW.svg" alt="Logo image" class="logo_img"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="blog.html"><span></span>BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="hero">
             <div class="right_herosection">
@@ -121,5 +124,11 @@
             <a href=""><img src="./Imgs/twitter (3).svg" alt="twitter account" /></a>
         </div>
     </footer>
+    
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click',()=>{
+        document.querySelector('.hamburger-menu').classList.toggle('open')
+    })
+    </script>
 </body>
 </html>
