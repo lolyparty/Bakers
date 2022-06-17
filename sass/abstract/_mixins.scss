@@ -14,10 +14,53 @@
         0%{       
             transform: translate(-50%, -50%) scale($initailscale);
         }
+        
         100%{           
             transform: translate(-50%, -50%) scale($finalscale);
         }
     } 
+}
+
+@mixin hamburgerspin($spinname){
+    @keyframes #{$spinname} {  
+        0%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        50%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        80%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        100%{
+            transform-origin: 50%;
+            transform: rotate(45deg); 
+        }
+    }
+}
+
+@mixin hamburgerspinR($spinnameR){
+    @keyframes #{$spinnameR} {  
+        0%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        50%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        80%{
+            transform-origin: 50%;
+            transform: rotate(360deg);
+        }
+        100%{
+            transform-origin: 50%;
+            transform: rotate(-45deg); 
+        }
+    }
 }
 
 

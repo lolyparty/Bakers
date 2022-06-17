@@ -28,6 +28,10 @@ window.addEventListener('load', loadAnimation);
         delay: (el, i) => 50 * i
     });
 
+    document.querySelector('.hamburger-menu').addEventListener('click',()=>{
+        document.querySelector('.hamburger-menu').classList.toggle('open')
+    })
+
 
 
 //slick carousel
