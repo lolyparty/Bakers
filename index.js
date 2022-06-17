@@ -32,6 +32,12 @@ window.addEventListener('load', loadAnimation);
         document.querySelector('.hamburger-menu').classList.toggle('open')
     })
 
+    document.querySelectorAll('.nav-link').forEach(link=>{
+        link.addEventListener('click',()=>{
+            document.querySelector('.hamburger-menu').classList.remove('open')
+        })
+    })
+
 
 
 //slick carousel
