@@ -201,7 +201,7 @@ body {
     width: 100vw;
     height: 100vh;
     clip-path: circle(100% at 50% 50%);
-    transition: all 2s;
+    transition: all 1s;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -426,49 +426,36 @@ body {
     color: #664e00;
     max-width: 70%; }
   .works .works_carouselcontainer {
-    padding: 40px 5px;
+    padding: 10px 25px;
     text-align: center;
-    margin: 0 auto; }
-    .works .works_carouselcontainer .works_carousel {
-      width: 80%;
-      margin: 0 auto; }
-      .works .works_carouselcontainer .works_carousel img {
-        width: 100%;
-        height: 525px; }
-      .works .works_carouselcontainer .works_carousel .active_img {
-        height: 580px; }
-      .works .works_carouselcontainer .works_carousel .slick-arrow {
-        height: 50px;
-        width: 50px; }
-        .works .works_carouselcontainer .works_carousel .slick-arrow:before {
-          content: ''; }
-        .works .works_carouselcontainer .works_carousel .slick-arrow:first-child {
-          background: url("../../../Imgs/Vector (2).svg");
-          background-size: 50%;
-          background-repeat: no-repeat; }
-      .works .works_carouselcontainer .works_carousel .active {
-        border: 1px solid #cc9d01;
-        position: relative;
-        margin-top: -35px;
-        padding: 10px 0px 10px 0px; }
-      .works .works_carouselcontainer .works_carousel .slick-next {
-        background: url("../../../Imgs/Vector.svg");
-        background-size: 50%;
-        background-repeat: no-repeat; }
-      .works .works_carouselcontainer .works_carousel .cupcakes {
-        position: absolute;
-        bottom: 10%;
-        font-size: 1.1rem;
-        left: 32%;
-        color: white;
-        border: none;
-        font-family: "Nunito Sans";
-        border-radius: 3px;
-        background: #adb901;
-        padding: 10px 20px; }
-      .works .works_carouselcontainer .works_carousel .slick-list .slick-track {
-        width: 7150px !important;
-        padding-top: 50px; }
+    width: 85%;
+    margin: 20px auto;
+    height: 600px; }
+    .works .works_carouselcontainer .swiper-wrapper {
+      height: 98%; }
+      .works .works_carouselcontainer .swiper-wrapper .swiper-slide {
+        height: 100%;
+        margin: auto 0px;
+        display: flex;
+        justify-content: center; }
+        .works .works_carouselcontainer .swiper-wrapper .swiper-slide img {
+          width: 70%;
+          height: 90%;
+          object-fit: cover;
+          margin: auto 0px;
+          box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25); }
+        .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active {
+          height: 100%;
+          margin: auto 0px;
+          border: 1px solid #cc9d01; }
+          .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active img {
+            height: 96%;
+            margin: auto 0px;
+            box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25); }
+    .works .works_carouselcontainer .swiper-button-next, .works .works_carouselcontainer .swiper-button-prev {
+      color: #cc9d01; }
+    .works .works_carouselcontainer .swiper-horizontal > .swiper-pagination-bullets, .works .works_carouselcontainer .swiper-pagination-bullets.swiper-pagination-horizontal, .works .works_carouselcontainer .swiper-pagination-custom, .works .works_carouselcontainer .swiper-pagination-fraction {
+      bottom: -3px; }
 
 .blogposts_container {
   padding: 10px 5px; }

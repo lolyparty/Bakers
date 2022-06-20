@@ -36,19 +36,4 @@ window.addEventListener('load', loadAnimation);
         link.addEventListener('click',()=>{
             document.querySelector('.hamburger-menu').classList.remove('open')
         })
-    })
-
-
-
-//slick carousel
-    // $('.works_carousel').slick({
-    //     // centerPadding:'0px',
-    //     arrows:true,
-    //     dots:true,
-    //     // slidesPerRow: 1,  
-    //     // centerMode: true,
-    //     // centerPadding: '-10px',   
-    //     slidesToShow: 3, 
-    // });
-
-    // document.querySelector('.slick-current').nextSibling.classList.add('active');
+    });

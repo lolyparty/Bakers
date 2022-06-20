@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Imgs/NW.svg" >
     <link href="css/style.css" rel="stylesheet" type="" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Nonso Williams | Private Cake Chef</title>
 </head>
 <body>
@@ -44,15 +41,15 @@
                     <span class="hamburger_layer"></span>
                 </div>
                     <div class="logo">
-                        <img src="Imgs/NW.svg" alt="Logo image" class="logo_img"/>
+                        <a href="index.html"><img src="Imgs/NW.svg" alt="Logo image" class="logo_img"/></a> 
                     </div>
                     <nav>
                         <ul>
                             <li><a href="index.html" class="nav-link"><span></span>HOME</a></li> 
-                            <li><a href="#" class="nav-link">ABOUT</a></li>
+                            <li><a href="#about" class="nav-link">ABOUT</a></li>
                             <li><a href="#my-works" class="nav-link">PORTFOLIO</a></li>
                             <li><a href="blog.html" class="nav-link">BLOG</a></li>
-                            <li><a href="#" class="nav-link">CONTACT</a></li>
+                            <li><a href="#contact" class="nav-link">CONTACT</a></li> 
                         </ul>
                     </nav>
             </header>
@@ -90,7 +87,7 @@
             <div class="about_meimage">
                  <img src="/Imgs/Rectangle 3.svg" alt="Nonso William's Picture">
             </div>
-            <div class="about_me">
+            <div class="about_me" id="about">
                 <div class="about_content">
                     <h4>Hi, I am Nonso Williams</h4>
                     <p>I am a Cake Chef, most folks know me as Nonso but in the inudustry I’m also known as the Fundat King. I have been a Cake Chef for the better part of a decade. I cut my teeth at the Abuja Catering School for Deserts before obtaining a degree at the famous institute of Culinary Education in Pastry Arts, Cake Techniques & Design as well as the Art of International Bread Baking</p>
@@ -107,23 +104,28 @@
                 </div>
                 <p>Here is a compilation of some of the cakes and pastries I ‘ve made  over the years. Please feel free to presuse through them and feed your eyes</p>
             </div>
-            <div class="works_carouselcontainer">
-                <!-- <div class="works_carousel">
-                    <div>
-                        <img src="/Imgs/portfolio-img.svg" alt=""> 
+            <div class="works_carouselcontainer swiper">
+                <div class="works_carousel swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                        <img src="/Imgs/portfolio-img.png" alt=""> 
                         
+                    </div> -->
+                    <div class="swiper-slide">
+                        <img src="/Imgs//portfolio-img (1).png" alt="">
                     </div>
-                    <div>
-                        <img src="/Imgs//portfolio-img (1).svg" alt="" class="active_img">
-                        <button class="cupcakes"><a class="cupcakes_anchor">Cupcakes</a></button>
-                    </div>
-                    <div>
+                    <div class="swiper-slide">
                         <img src="/Imgs/portfolio-img.png" alt="">
                     </div>
-                    <div>
-                        <img src="/Imgs/portfolio-img.svg" alt="">
+                    <div class="swiper-slide">
+                        <img src="/Imgs/portfolio-img (2).png" alt="">  
                     </div>
-                </div> -->
+                </div>
+                 <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="blogposts_container">
@@ -186,12 +188,29 @@
         </footer>
     </div>
     
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
     <script src="index.js"></script>
-    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true, 
+        spaceBetween: 25,   
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, 
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
 </body>
 </html>

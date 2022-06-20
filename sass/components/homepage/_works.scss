@@ -32,78 +32,51 @@
     }
 
     .works_carouselcontainer{
-        padding:40px 5px; 
+        padding:10px 25px;     
         text-align: center ;
-        // width:100%;  
-        margin:0 auto;
+        width:85%;         
+        margin:20px auto;  
+        height:600px;        
+          
 
-        .works_carousel{
+        .swiper-wrapper{
+            height:98%;                 
+            
+            .swiper-slide{
+                height:100%;   
+                margin:auto 0px;  
+                display: flex;
+                justify-content: center;
 
-            width: 80%;   
-            margin: 0 auto;
-
-            img{
-                width:100%; 
-                height:525px;       
-            }
-
-            .active_img{
-                height:580px;  
-            }
-
-            .slick-arrow{
-
-                &:before{
-                    content:''
+                img{
+                    width:70%;        
+                    height:90%;   
+                    object-fit: cover;
+                    margin:auto 0px; 
+                    box-shadow: $img_shadow; 
                 }
 
-                height:50px;
-                width:50px;
-                
+                &-active{
+                    height:100%;  
+                    margin: auto 0px; 
+                    border:1px solid $color_yellowLight;  
 
-                &:first-child{
-                    background: url('../../../Imgs/Vector\ \(2\).svg');
-                    background-size:50%; 
-                    background-repeat: no-repeat;
-                    
-                    
-                }
-
-                
-            }
-
-            .active{
-                border:1px solid $color_yellowLight; 
-                position:relative;
-                margin-top:-35px;  
-                padding:10px 0px 10px 0px;  
-            }
-
-            .slick-next{  
-                background: url('../../../Imgs/Vector.svg');
-                background-size:50%; 
-                background-repeat: no-repeat;
-            }
-
-            .cupcakes{
-                position:absolute;
-                bottom:10%; 
-                font-size:1.1rem; 
-                left:32%;
-                color:white;
-                border:none;
-                font-family: $font_nuito;
-                border-radius: 3px; 
-                background:$color_blogpost-button; 
-                padding:10px 20px;
-            }
-
-            .slick-list{
-                .slick-track{
-                    width:7150px !important;  
-                    padding-top:50px; 
+                    img{
+                        height:96%;   
+                        margin:auto 0px;  
+                        box-shadow: $img_shadow;
+                    }
                 }
             }
+
+        }
+
+        .swiper-button-next, .swiper-button-prev{
+            color:$color_yellowLight;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+            bottom:-3px;       
         }
     }   
 }
