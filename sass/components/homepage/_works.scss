@@ -32,11 +32,11 @@
     }
 
     .works_carouselcontainer{
-        padding:10px 25px;     
+        padding:10px 28px;           
         text-align: center ;
-        width:85%;         
+        width:85%;           
         margin:20px auto;  
-        height:600px;        
+        height:620px;           
           
 
         .swiper-wrapper{
@@ -49,8 +49,8 @@
                 justify-content: center;
 
                 img{
-                    width:70%;        
-                    height:90%;   
+                    width:80%;           
+                    height:93%;    
                     object-fit: cover;
                     margin:auto 0px; 
                     box-shadow: $img_shadow; 
@@ -60,9 +60,12 @@
                     height:100%;  
                     margin: auto 0px; 
                     border:1px solid $color_yellowLight;  
+                    padding-top:8px; 
+                    padding-bottom:8px;  
 
                     img{
-                        height:96%;   
+                        width:90%;  
+                        height:99%;      
                         margin:auto 0px;  
                         box-shadow: $img_shadow;
                     }

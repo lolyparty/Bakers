@@ -426,11 +426,11 @@ body {
     color: #664e00;
     max-width: 70%; }
   .works .works_carouselcontainer {
-    padding: 10px 25px;
+    padding: 10px 28px;
     text-align: center;
     width: 85%;
     margin: 20px auto;
-    height: 600px; }
+    height: 620px; }
     .works .works_carouselcontainer .swiper-wrapper {
       height: 98%; }
       .works .works_carouselcontainer .swiper-wrapper .swiper-slide {
@@ -439,17 +439,20 @@ body {
         display: flex;
         justify-content: center; }
         .works .works_carouselcontainer .swiper-wrapper .swiper-slide img {
-          width: 70%;
-          height: 90%;
+          width: 80%;
+          height: 93%;
           object-fit: cover;
           margin: auto 0px;
           box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25); }
         .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active {
           height: 100%;
           margin: auto 0px;
-          border: 1px solid #cc9d01; }
+          border: 1px solid #cc9d01;
+          padding-top: 8px;
+          padding-bottom: 8px; }
           .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active img {
-            height: 96%;
+            width: 90%;
+            height: 99%;
             margin: auto 0px;
             box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25); }
     .works .works_carouselcontainer .swiper-button-next, .works .works_carouselcontainer .swiper-button-prev {
