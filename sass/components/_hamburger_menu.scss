@@ -46,7 +46,11 @@
                     }
                 }
             } 
+
             .hamburger-menu.open{   
+                position:fixed; 
+                top:3%;    
+                  
                 .hamburger_layer{
                     background-color:transparent; 
         
