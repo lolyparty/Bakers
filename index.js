@@ -5,7 +5,7 @@ const loadAnimation = ()=>{
     }, 3500); 
 }
 
-window.addEventListener('load', loadAnimation);
+window.addEventListener('DOMContentLoaded', loadAnimation);
 
 
 // anime js for naimations
