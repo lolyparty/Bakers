@@ -2,7 +2,7 @@ const loadAnimation = ()=>{
     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
     setTimeout(()=>{
             document.querySelector('.page_container').style.display = 'block'
-    }, 5500); 
+    }, 3500); 
 }
 
 window.addEventListener('load', loadAnimation);
@@ -16,8 +16,7 @@ window.addEventListener('load', loadAnimation);
     .add({
         targets: '.ml6 .letter',
         opacity:0,
-        duration:2300,
-        delay:2000,  
+        delay:3300,    
     })
     .add({
         targets: '.ml6 .letter',
