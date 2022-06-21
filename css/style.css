@@ -127,10 +127,10 @@ body {
     position: relative; }
     .page_container .hamburger-menu {
       position: absolute;
-      top: .5%;
+      top: .7%;
       right: 5%;
       z-index: 9999 !important;
-      width: 40px;
+      width: 30px;
       height: 50px; }
       .page_container .hamburger-menu .hamburger_layer {
         display: inline-block;
@@ -165,7 +165,7 @@ body {
       .page_container .hamburger-menu.open .hamburger_layer::after {
         top: 0;
         background: #fff;
-        animation: spin 1s ease forwards; }
+        animation: spin .6s ease forwards; }
   @keyframes spin {
     0% {
       transform-origin: 50%;
@@ -182,7 +182,7 @@ body {
       .page_container .hamburger-menu.open .hamburger_layer::before {
         top: 0;
         background: #fff;
-        animation: spinR 1s ease forwards; }
+        animation: spinR .6s ease forwards; }
   @keyframes spinR {
     0% {
       transform-origin: 50%;
@@ -1085,7 +1085,7 @@ body {
     height: 100%;
     background: #e6b001;
     clip-path: circle(0% at 90% 6%);
-    z-index: 0;
+    z-index: -1;
     transition: all .7s; }
     .hero_container header nav ul {
       display: none; }
@@ -1100,6 +1100,8 @@ body {
       margin-top: 50px; }
       #hero .right_herosection .ml6 .letters {
         font-size: 3.5rem; }
+  .whitespace__bigcircle {
+    animation-timing-function: ease; }
   .about {
     justify-content: center; }
     .about .about_meimage {
