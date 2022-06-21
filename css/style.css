@@ -649,7 +649,7 @@ body {
     margin: 0px 10px; }
 
 .blog_hero {
-  background: url("../../Imgs/header-bg.svg");
+  background: url("../../Imgs/header-bg.png");
   background-size: 100%;
   background-color: #F7F7F7;
   background-position: right top;
@@ -678,14 +678,14 @@ body {
         background-size: cover;
         margin-top: 35px; }
       .blogposts_section .blogposts_container .post_item:nth-child(2) {
-        background: url("../../Imgs/card-image (3).svg");
+        background: url("../../Imgs/card-image (3).png");
         background-size: cover; }
       .blogposts_section .blogposts_container .post_item:nth-child(3) {
-        background: url("../../Imgs/card-image (4).svg");
+        background: url("../../Imgs/card-image (4).png");
         background-size: cover;
         background-repeat: no-repeat; }
       .blogposts_section .blogposts_container .post_item:nth-child(4) {
-        background: url("../../Imgs/card-img.svg");
+        background: url("../../Imgs/card-img.png");
         background-size: cover; }
       .blogposts_section .blogposts_container .post_item .blog_content {
         background: #00000080 50%;
@@ -827,10 +827,10 @@ body {
           color: #adb901;
           text-decoration: none; }
     .blogposts_section .recentpost_flex #new_blogpost {
-      background: url("../../Imgs/card-image (3).svg");
+      background: url("../../Imgs/card-image (3).png");
       background-size: cover; }
     .blogposts_section .recentpost_flex #new_blogpost2 {
-      background: url("../../Imgs/card-image (4).svg");
+      background: url("../../Imgs/card-image (4).png");
       background-repeat: no-repeat;
       background-size: 185%; }
 
@@ -1005,7 +1005,7 @@ body {
   .works .works_carouselcontainer {
     width: 80%;
     padding: 10px 50px;
-    height: 900px; }
+    height: 700px; }
     .works .works_carouselcontainer .swiper-wrapper .swiper-slide img {
       width: 85%; }
     .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active {
@@ -1192,7 +1192,7 @@ body {
   .works .works_carouselcontainer {
     width: 100%;
     padding: 10px 30px;
-    height: 650px; }
+    height: 600px; }
     .works .works_carouselcontainer .swiper-wrapper .swiper-slide-active img {
       width: 85%; }
   .blogposts_container .blog_posts {
