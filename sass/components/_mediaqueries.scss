@@ -295,13 +295,20 @@
 
         .blog_posts{
             margin-bottom:20px;  
+            gap:15px;
+            margin-left:10px;
+            margin-right:10px;  
             
             .post_item{
                     width:95%;        
                     height:350px; 
                     
                     .blog_content{
-                        padding:4px;    
+                        padding:4px; 
+                        
+                        p{
+                            font-size:.9rem; 
+                        }
 
                     }
             }
@@ -505,7 +512,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top:20px;
+            margin:20px 0px; 
 
             .post_item{
                     width:82%;       
@@ -639,9 +646,7 @@
     .blogposts_container{
 
         .blog_posts{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
             .post_item{
                     width:82%;       
                     height:350px;  
@@ -871,9 +876,7 @@
     .blogposts_container{
 
         .blog_posts{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            
             .post_item{
                     width:95%;        
                     height:350px; 
