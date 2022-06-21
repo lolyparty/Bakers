@@ -139,6 +139,47 @@
                 } 
         }
     }
+
+    .works{
+        .works_carouselcontainer{
+            width:95%;     
+              
+            .swiper-wrapper{
+                
+                .swiper-slide{
+    
+                    img{
+                        width:85%;   
+                    }
+    
+                    .swiper-btn{
+    
+                    }
+    
+                    &-active{
+                        
+    
+                        img{
+                            // width:90%;   
+                        }
+    
+                        .swiper-btn{
+                              
+                        }
+                    }
+                }
+
+                .swiper-button-prev{
+                    left:0px;
+                }
+
+                .swiper-button-next{
+                    right:0px;
+                }
+    
+            }
+        } 
+    }
          
 }
 
@@ -241,6 +282,8 @@
             }
         }
     }
+
+    
     
 }
 
@@ -380,6 +423,47 @@
         .recentpost_flex{
             display:none;
         }
+    }
+
+    .works{
+        .works_carouselcontainer{
+            width:80%; 
+            padding:10px 50px;
+            height:900px;            
+              
+            .swiper-wrapper{
+                
+                .swiper-slide{
+    
+                    img{
+                        width:85%;   
+                    } 
+    
+                    &-active{
+                        padding-top:35px; 
+                        padding-bottom:35px;    
+    
+                        img{
+                            width:85%;   
+                            object-fit: cover;  
+                            height:100%;  
+                        }
+    
+                        .swiper-btn{
+                              font-size:1.2rem;
+                        }
+                    }
+                }
+    
+            }
+            .swiper-button-prev{
+                left:0px;
+            }
+
+            .swiper-button-next{
+                right:-1px;       
+            }   
+        } 
     }
 }
 
@@ -556,6 +640,15 @@
                     max-width:98.5%;  
                 }
             }
+
+        .works_carouselcontainer{
+            width:100%;   
+            padding:10px 40px;     
+            height:900px;            
+                
+            
+        } 
+
     } 
 
     .blogposts_container{
@@ -760,6 +853,28 @@
                     font-size:.9rem;   
                 }
             }
+        
+        .works_carouselcontainer{
+            width:100%;   
+            padding:10px 30px;       
+            height:650px;  
+            
+            .swiper-wrapper{
+
+                .swiper-slide{
+
+                    &-active{
+
+                        img{
+                            width:85%; 
+                        }
+                    }
+
+                }
+
+            }
+                
+        }
     } 
 
     .blogposts_container{

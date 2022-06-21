@@ -106,10 +106,6 @@
             </div>
             <div class="works_carouselcontainer swiper">
                 <div class="works_carousel swiper-wrapper">
-                    <!-- <div class="swiper-slide">
-                        <img src="/Imgs/portfolio-img.png" alt=""> 
-                        
-                    </div> -->
                     <div class="swiper-slide">
                         <img src="/Imgs//portfolio-img (1).png" alt="">
                     </div>
@@ -117,7 +113,8 @@
                         <img src="/Imgs/portfolio-img.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="/Imgs/portfolio-img (2).png" alt="">  
+                        <img src="/Imgs/portfolio-img (2).png" alt=""> 
+                        <button class="swiper-btn">CUPCAKES</button>  
                     </div>
                 </div>
                  <!-- If we need pagination -->
@@ -210,6 +207,17 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints:{
+            100:{  
+                spaceBetween: 10,     
+                slidesPerView: 1,   
+            },
+
+            890:{
+                spaceBetween: 35,     
+                slidesPerView: 3,  
+            }
+        }
         });
     </script>
 </body>
