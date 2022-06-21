@@ -203,7 +203,7 @@ body {
       width: 100vw;
       height: 100vh;
       clip-path: circle(100% at 50% 50%);
-      transition: all 1s;
+      transition: all .7s;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1080,7 +1080,7 @@ body {
     background: #e6b001;
     clip-path: circle(0% at 88% 4%);
     z-index: 0;
-    transition: all 1s; }
+    transition: all .7s; }
     .hero_container header nav ul {
       display: none; }
       .hero_container header nav ul li {
