@@ -2,7 +2,7 @@ const loadAnimation = ()=>{
     document.querySelector('#loadinganimation_container').classList.add('loadanimation')
     setTimeout(()=>{
             document.querySelector('.page_container').style.display = 'block'
-    }, 4000);
+    }, 5000);
 }
 
 window.addEventListener('load', loadAnimation);
