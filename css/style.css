@@ -512,7 +512,7 @@ body {
         background: url("../../Imgs/card-image.svg");
         background-size: cover; }
       .blogposts_container .blog_posts .post_item:last-child {
-        background: url("../../Imgs/card-img.svg");
+        background: url("../../Imgs/card-img.png");
         background-size: 100%; }
       .blogposts_container .blog_posts .post_item .blog_content {
         background: #00000080 50%;
