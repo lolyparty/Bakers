@@ -28,11 +28,15 @@ window.addEventListener('DOMContentLoaded', loadAnimation);
     });
 
     document.querySelector('.hamburger-menu').addEventListener('click',()=>{
-        document.querySelector('.hamburger-menu').classList.toggle('open')
+        document.querySelector('.hamburger-menu').classList.toggle('open');
+        document.querySelector('nav').classList.toggle('open'); 
+        document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'visible' : 'hidden';
     })
 
     document.querySelectorAll('.nav-link').forEach(link=>{
         link.addEventListener('click',()=>{
-            document.querySelector('.hamburger-menu').classList.remove('open')
+            document.querySelector('.hamburger-menu').classList.remove('open');
+            document.querySelector('nav').classList.remove('open'); 
+            document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'visible' : 'hidden';
         })
     });

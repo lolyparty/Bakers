@@ -1,14 +1,13 @@
 @media screen and(max-width:700px) {
-    .hero_container{
-        
-        header{
+        .page_container{ 
+            position: relative;
 
             .hamburger-menu{
                 position: absolute; 
-                top:20%;    
+                top:.5%;      
                 right:5%; 
                 z-index: 9999 !important; 
-                width:50px; 
+                width:40px;  
                 height:50px; 
             
             
@@ -47,9 +46,7 @@
                 }
             } 
 
-            .hamburger-menu.open{   
-                position:fixed; 
-                top:3%;    
+            .hamburger-menu.open{                    
                   
                 .hamburger_layer{
                     background-color:transparent; 
@@ -71,37 +68,40 @@
                 
             }
 
-            .hamburger-menu.open ~ nav{   
-                position:fixed; 
-                top:0%;     
-                right:0%;
-                width:100vw; 
-                height:100vh;          
-                clip-path: circle(100% at 50% 50%);    
-                transition:all 1s;  
-                display: flex;
-                align-items: center;
-                justify-content: center; 
-
-                ul{
-                    display:block;
-                    position: absolute;
-                    top:50%;
-                    left:50%;
-                    transform:translate(-50%,-50%);  
-                    // height:100%;
-
-                    li{
-                        margin-top:10px; 
-
-                        a{
-                            font-size:1.5rem;  
-                            line-height:2; 
-                            color:#fff;
+            // .header.open {
+                nav.open{       
+                    position:fixed; 
+                    top:0%;     
+                    right:0%;
+                    width:100vw; 
+                    height:100vh;          
+                    clip-path: circle(100% at 50% 50%);    
+                    transition:all 1s;  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    z-index:9;
+            
+                    ul{
+                        display:block;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%,-50%);  
+                        // height:100%;
+            
+                        li{
+                            margin-top:10px; 
+            
+                            a{
+                                font-size:1.5rem;  
+                                line-height:2; 
+                                color:#fff;
+                            }
                         }
                     }
                 }
-            }
+            // }
         }
-    }
 }
+

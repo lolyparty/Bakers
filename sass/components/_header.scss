@@ -1,11 +1,11 @@
 .hero_container{
     background:$color_heroBackground; 
     z-index: 9;
+    
     header{
         padding:15px 12px;
         display:flex;
         justify-content: space-between;
-        position:relative;
         z-index: 9; 
         align-items: center;
 
