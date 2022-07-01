@@ -34,9 +34,11 @@ window.addEventListener('DOMContentLoaded', loadAnimation);
     })
 
     document.querySelectorAll('.nav-link').forEach(link=>{
-        link.addEventListener('click',()=>{
-            document.querySelector('.hamburger-menu').classList.remove('open');
-            document.querySelector('nav').classList.remove('open'); 
-            document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'visible' : 'hidden';
-        })
+        if(window.screen.width < 701){
+            link.addEventListener('click',()=>{
+                document.querySelector('.hamburger-menu').classList.remove('open');
+                document.querySelector('nav').classList.remove('open'); 
+                document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'visible' : 'hidden';
+            })
+        }
     });
