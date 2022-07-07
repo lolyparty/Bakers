@@ -1,6 +1,10 @@
 # Bakers
 Landing page for nonso Williams, a private cake chef. Built with HTML and SASS
 
+## GIF
+
+![Gif](https://media.giphy.com/media/wjri2tIsXEiDRqioU0/giphy.gif)
+
  ## Screeshot of webpages
 
  ![HomePage](https://i.postimg.cc/NM7R6TrF/screencapture-127-0-0-1-5501-index-html-2022-05-24-13-26-56.png)
